@@ -9,18 +9,22 @@ class App extends Component {
         return (
             <div>
                  <h1 className = "header">TweetX</h1>
-                 <Button className = "button" outline color="" size="lg">Create Account</Button>
-                 <h1 className = "head">Login</h1>
+                 <Button className = "button" outline color="" size="lg" block>Login</Button>
+                 <h1 className = "head">Create Account</h1>
                  <Form className = "form">
+                   <FormGroup>
+                         <Input type="email" name="email" id="exampleEmail" placeholder="Name" />
+                       </FormGroup>
                     <FormGroup>
-                       <Label for="exampleEmail">Email</Label>
                        <Input type="email" name="email" id="exampleEmail" placeholder="Email" />
                      </FormGroup>
                      <FormGroup>
-                       <Label for="examplePassword">Password</Label>
-                       <Input type="password" name="password" id="examplePassword" placeholder="password"/>
+                       <Input type="password" name="password" id="examplePassword" placeholder="Password"/>
                      </FormGroup>
-                     <Button  className = "submit" color="danger" size="lg">Login</Button>{'Forgot Password ?'}
+                     <FormGroup>
+                       <Input type="password" name="password" id="examplePassword" placeholder="Confirm Password"/>
+                     </FormGroup>
+                     <Button  className = "submit" color="danger" size="lg">Sign up</Button>
                  </Form>
             </div>
         );

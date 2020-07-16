@@ -6,11 +6,10 @@
 }
 
 .button {
-    width : 20%;
     margin-top : 35px;
     margin-left:  55px;
     font-weight: 50px;
-    border : 1px solid grey;
+    border : 2px solid black;
 }
 
 .head {
@@ -21,7 +20,7 @@
 
 
 .form{
-    width : 30%;
+    width : 45%;
     margin : 3em auto 0 5em ; 
 }
 
