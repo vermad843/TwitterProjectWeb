@@ -1,0 +1,31 @@
+.header{
+    color : red;
+    margin-top : 55px;
+    margin-left:  55px;
+    font-weight: 50px;
+}
+
+.button {
+    margin-top : 35px;
+    margin-left:  55px;
+    font-weight: 50px;
+    border : 2px solid black;
+}
+
+.head {
+    margin-top : 75px;
+    margin-left:  55px;
+    font-weight: 50px;
+}
+
+
+.form{
+    width : 45%;
+    margin : 3em auto 0 5em ; 
+}
+
+.submit {
+    float: right;
+}
+
+
