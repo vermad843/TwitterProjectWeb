@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Nav, NavItem, NavLink,Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Nav, NavItem, NavLink,Card, CardText, CardBody,
+    CardTitle, CardSubtitle, Button,Media } from 'reactstrap';
 
 
 class App extends Component {
@@ -27,9 +27,10 @@ class App extends Component {
                </Nav>
                <div>
                  <Button className = "button" >Write</Button>
-               </div> 
+               </div>
                <Card className = "card">
-                  <CardBody>
+                  <CardBody >
+                    <img  className = "media"   src = "circle-png.png"/>
                     <CardTitle>Card title</CardTitle>
                     <CardSubtitle>Card subtitle</CardSubtitle>
                     <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
@@ -37,18 +38,21 @@ class App extends Component {
                 </Card>  
                 <Card className = "card">
                   <CardBody>
-                    <CardTitle>Card title</CardTitle>
+                  <img  className = "media"   src = "circle-png.png"/>
+                   <CardTitle>Card title</CardTitle>
                     <CardSubtitle>Card subtitle</CardSubtitle>
                     <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
                   </CardBody>
                 </Card>    
                 <Card className = "card">
                   <CardBody>
+                  <img  className = "media"   src = "circle-png.png"/>
                     <CardTitle>Card title</CardTitle>
                     <CardSubtitle>Card subtitle</CardSubtitle>
                     <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
                   </CardBody>
-                </Card>         
+                </Card>
+                       
           </div>
         );
     }
