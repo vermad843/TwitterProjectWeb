@@ -1,32 +1,27 @@
-.header{
-    color : red;
-    margin-top : 55px;
-    margin-left:  55px;
-    font-weight: 50px;
-}
-
-.button {
-    width : 20%;
-    margin-top : 35px;
-    margin-left:  55px;
-    font-weight: 50px;
-    border : 1px solid grey;
-}
-
-.head {
-    margin-top : 75px;
-    margin-left:  55px;
-    font-weight: 50px;
-}
-
-
-.form{
-    width : 30%;
-    margin : 3em auto 0 5em ; 
-}
-
-.submit {
+ .nav {
+    min-height: 50px;
+    padding-top: 20px;
     float: right;
-}
+ }
+
+ .heading {
+    min-height: 50px;
+    padding-top: 20px;
+    float: left;
+    color : red;
+ }
+
+ .button {
+    background-color: red; 
+    margin : 8em auto;
+    margin-left: 20%;
+ }
+
+ .card {
+    min-height: 50px;
+    padding-top: 20px;
+    width : 50%;
+    margin : 5px auto;
+ }
 
 

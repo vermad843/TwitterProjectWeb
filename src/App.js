@@ -1,32 +1,55 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-
+import { Nav, NavItem, NavLink,Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle, Button } from 'reactstrap';
 
 
 class App extends Component {
     render() {
         return (
             <div>
-                 <h1 className = "header">TweetX</h1>
-                 <Button className = "button" outline color="" size="lg" block>Login</Button>
-                 <h1 className = "head">Create Account</h1>
-                 <Form className = "form">
-                   <FormGroup>
-                         <Input type="email" name="email" id="exampleEmail" placeholder="Name" />
-                       </FormGroup>
-                    <FormGroup>
-                       <Input type="email" name="email" id="exampleEmail" placeholder="Email" />
-                     </FormGroup>
-                     <FormGroup>
-                       <Input type="password" name="password" id="examplePassword" placeholder="Password"/>
-                     </FormGroup>
-                     <FormGroup>
-                       <Input type="password" name="password" id="examplePassword" placeholder="Confirm Password"/>
-                     </FormGroup>
-                     <Button  className = "submit" color="danger" size="lg">Sign up</Button>
-                 </Form>
-            </div>
+               <div className = "heading">
+                <h1 >TweetX</h1>
+               </div>
+               <Nav className = "nav">
+                 <NavItem>
+                   <NavLink href="#">Feed</NavLink>
+                 </NavItem>
+                 <NavItem>
+                   <NavLink href="#">Users</NavLink>
+                 </NavItem>
+                 <NavItem>
+                   <NavLink href="#">Profile</NavLink>
+                 </NavItem>
+                 <NavItem>
+                   <NavLink disabled href="#"></NavLink>
+                 </NavItem>
+               </Nav>
+               <div>
+                 <Button className = "button" >Write</Button>
+               </div> 
+               <Card className = "card">
+                  <CardBody>
+                    <CardTitle>Card title</CardTitle>
+                    <CardSubtitle>Card subtitle</CardSubtitle>
+                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                  </CardBody>
+                </Card>  
+                <Card className = "card">
+                  <CardBody>
+                    <CardTitle>Card title</CardTitle>
+                    <CardSubtitle>Card subtitle</CardSubtitle>
+                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                  </CardBody>
+                </Card>    
+                <Card className = "card">
+                  <CardBody>
+                    <CardTitle>Card title</CardTitle>
+                    <CardSubtitle>Card subtitle</CardSubtitle>
+                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                  </CardBody>
+                </Card>         
+          </div>
         );
     }
 }
